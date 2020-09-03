@@ -1,0 +1,1 @@
+maintenance_work_mem: GREATEST({DBInstanceClassMemory*1024/63963136},65536)
