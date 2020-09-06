@@ -13,6 +13,7 @@ const getSenators = (request, response) => {
   pool.query('SELECT * FROM tweets LIMIT 500000', (error, results) => {
     if (error) {
       throw error
+      console.log('Hi!')
     }
     response.status(200).json(results.rows)
   })
